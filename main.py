@@ -1,8 +1,10 @@
 import numpy as np
 import pygame
 
-img = np.zeros((100,10,3),dtype=np.uint8)
-print(img)
+img = np.full((3,2,3), fill_value=1,dtype=np.uint8)
+surf = pygame.surfarray.make_surface(img)
+print(img.shape)
+print(surf.get_bitsize())
 
 # pygame.init()
 # display = pygame.display.set_mode((350, 350))

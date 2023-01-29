@@ -1,8 +1,15 @@
 import numpy as np
 import pygame as pg
 
+def update():
+    image = np.random.random((600, 600, 3)) * 255.0
+    image[:,:200,0] = 255.0
+    image[:,200:400,1] = 255.0
+    image[:,400:,2] = 255.0
+    return image.astype('uint8')
+
 field_cels = {}
-field = np.zeros((1000, 1000))
+field = update()
 
 print(field)
 
@@ -104,7 +111,7 @@ def main():
         screen.fill(background_color)
         pg.display.flip()
 
-        image_w, image_h = field.shape
+        image_w, image_h, _ = field.shape
 
         if image_w < view_size[0] or image_h < view_size[1]:
             print("The source image is too small for this example.")
