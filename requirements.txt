@@ -1,5 +1,7 @@
 pandas
 numpy
-miniKanren
 logical-unification
 sympy
+pygame
+taichi
+git+https://github.com/pythological/kanren.git
