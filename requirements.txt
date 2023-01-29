@@ -1,4 +1,8 @@
 pandas
 numpy
+<<<<<<< HEAD
 miniKanren
 logical-unification
+=======
+sympy
+>>>>>>> f85fae60869ca16650fc01d0a5080d03c70de873
