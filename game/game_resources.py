@@ -1,5 +1,11 @@
 import pygame as pg
 import game_files as gf
+import imageio
+import glob
+
+for im_path in glob.glob("path/to/folder/*.png"):
+     im = imageio.imread(im_path)
+     print(im.shape)
 
 class Resources:
 
@@ -12,3 +18,6 @@ class Resources:
 
     def load(self):
         self.load_terrian()
+
+    def __getattr__(self, attr):
+        return self.terrian[attr].copy()

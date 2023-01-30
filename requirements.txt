@@ -4,4 +4,6 @@ logical-unification
 sympy
 pygame
 taichi
+imageio
+
 git+https://github.com/pythological/kanren.git
