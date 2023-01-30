@@ -5,5 +5,7 @@ sympy
 pygame
 taichi
 imageio
+powerplan
+pyinstaller
 
 git+https://github.com/pythological/kanren.git
