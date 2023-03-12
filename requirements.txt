@@ -7,5 +7,6 @@ taichi
 imageio
 powerplan
 pyinstaller
+python-telegram
 
 git+https://github.com/pythological/kanren.git

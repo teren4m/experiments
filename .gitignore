@@ -2,3 +2,5 @@
 /build
 /dist
 *.spec
+telegram_creds.py
+__pycache__

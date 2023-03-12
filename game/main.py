@@ -12,6 +12,15 @@ core = Core()
 def draw_screen_tile(screen):
     def draw_tile(x: int, y: int, field: np.ndarray):
         tile = field[x][y][gc.tile_position]
+        match tile:
+            case pattern-1:
+                action-1
+            case pattern-2:
+                action-2
+            case pattern-3:
+                action-3
+            case _:
+                action-default
         screen.blit(res.land, (0, 0))
     return draw_tile
 
